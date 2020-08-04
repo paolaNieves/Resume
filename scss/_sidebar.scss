@@ -1,0 +1,80 @@
+.sidebar {
+  padding: 32px;
+  img {
+    box-shadow: 0 1px 32px rgba(20, 23, 26, 0.12);
+  }
+  figcaption {
+    margin-top: 32px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1;
+  }
+  small {
+    font-size: 32px;
+    font-weight: inherit;
+  }
+  .container-block-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .degree {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .education-container .item {
+    margin-bottom: 15px;
+  }
+
+  .education-container .item:last-child {
+    margin-bottom: 0;
+  }
+
+  .education-container .meta {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  .education-container .time {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+
+  .languages-container .lang-desc {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .languages-list {
+    margin-bottom: 0;
+  }
+
+  .languages-list li {
+    margin-bottom: 10px;
+  }
+
+  .languages-list li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.main-menu {
+  li {
+    border-bottom: 1px solid white;
+    padding: 15px 0;
+    transition: 0.3s ease-out;
+  }
+  a {
+    @include text-link--large;
+    transition: inherit;
+    i {
+      margin: 0 12px 0 18px;
+    }
+  }
+}

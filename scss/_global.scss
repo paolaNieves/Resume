@@ -1,3 +1,86 @@
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
 .background-black {
   background: $black;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+p {
+  font-size: 14px;
+}
+p.large-copy {
+  font-size: 16px;
+}
+p.copy {
+  font-size: 14px;
+}
+caption {
+  font-size: 12px;
+}
+
+@mixin text-link--large {
+  font-size: 16px;
+}
+.text-link-small {
+  font-size: 14px;
+}
+label,
+.label {
+  font-size: 16px;
+}
+.wrapper .container {
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+/*Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .wrapper .container {
+    margin: 50px auto;
+  }
 }
