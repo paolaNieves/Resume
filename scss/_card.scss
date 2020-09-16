@@ -1,0 +1,76 @@
+.card {
+  padding: 25px;
+  border-color: transparent;
+  box-shadow: 0 1px 32px rgba(20, 13, 26, 0.12);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 3px;
+  background-color: $card-bg-light;
+
+  p:last-of-type {
+    margin-bottom: 35px;
+  }
+
+  .title {
+    color: $grey;
+    font-weight: bold;
+    i {
+      margin-right: 5px;
+    }
+  }
+  .interests i {
+    color: $grey;
+    font-size: 30px;
+  }
+  &--stats {
+    padding: 15px 10px;
+    i {
+      color: $grey;
+      font-size: 30px;
+    }
+    p {
+      font-size: 12px;
+      color: $grey;
+    }
+  }
+  i {
+    font-weight: bold;
+  }
+  .item {
+    margin-bottom: 15px;
+    overflow: hidden;
+    flex-direction: row;
+  }
+  .python {
+    width: 70%;
+    animation: progress 2s;
+  }
+  @keyframes progress {
+    0% {
+      width: 0;
+    }
+  }
+}
+.sideline {
+  overflow: hidden;
+
+  &:before,
+  &:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 60%;
+  }
+
+  &:before {
+    right: 0.5em;
+    margin-left: -60%;
+  }
+
+  &:after {
+    left: 0.5em;
+    margin-right: -60%;
+  }
+}
